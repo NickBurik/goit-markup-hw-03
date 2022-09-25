@@ -10,6 +10,7 @@
   --section-bg-color: #2f303a;
   --footer-auth-color: rgba(255, 255, 255, 0.6);
   --bgc-ourteam-color: #f5f4fa;
+  --container-border-color: #EEEEEE;
 }
 
 h1,
@@ -367,12 +368,10 @@ padding-bottom: 47px;
 }
 
 .partfolio-button {
-  padding: 6px, 24px;
+  padding: 6px 22px;
   font-family: inherit;
   border-color: transparent;
-  cursor: pointer;
   border-radius: 4px;
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -400,9 +399,17 @@ padding-bottom: 47px;
   flex-basis: calccalc(100% - 60px / 3);
 }
 
+.project-container {
+  padding: 20px 24px;
+  border-left: 1px solid var(--container-border-color);
+  border-right: 1px solid var(--container-border-color);
+  border-bottom: 1px solid var(--container-border-color);;
+}
 
 
-.work-link .title {
+
+.project-container .title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -410,7 +417,7 @@ padding-bottom: 47px;
   color: var(--title-text-color);
 }
 
-.work-link .text {
+.project-container .text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primari-text-color);
